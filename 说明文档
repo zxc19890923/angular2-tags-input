@@ -1,0 +1,23 @@
+1、安装
+
+npm install angular2-tag-input --save
+2、配置app.module.ts
+
+@NgModule({
+  imports: [
+    RlTagInputModule
+  ]
+})
+3、模板界面
+
+<rl-tag-input [(ngModel)]="tags" placeholder="Testing placeholder"></rl-tag-input>
+4、组件界面
+
+...
+export class HomeComponent {
+ tags: Array<string>;
+  constructor() {
+    this.tags = [];
+  }
+}
+... 
